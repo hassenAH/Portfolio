@@ -38,8 +38,7 @@ const About = () => {
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
         
-Passionate software engineer specializing in innovative mobile application development. Expert in Java and Kotlin, with proven experience in leading projects from concept to delivery. A natural communicator, I strive to create technological solutions that enhance everyday life.
-      </motion.p>
+salem      </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
