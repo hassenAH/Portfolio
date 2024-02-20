@@ -26,7 +26,7 @@ const App = () => {
           <Tech />
         </div>
 
-        <Projects />
+       
 
         <div
           className="bg-experience bg-cover bg-center bg-no-repeat 
@@ -44,5 +44,5 @@ const App = () => {
     </BrowserRouter>
   );
 };
-
+/** <Projects /> */
 export default App;
