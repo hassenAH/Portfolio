@@ -103,7 +103,7 @@ const experiences = [
     company_name: 'ADDINN Group',
     icon: addinn,
     iconBg: '#333333',
-    date: ' Jan 2023 - Now',
+    date: ' Jan 2025 - Now',
   },
   {
     title: 'Mobile Developer and UX/UI Designer intern',
