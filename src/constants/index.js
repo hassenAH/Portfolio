@@ -4,33 +4,23 @@ import {
   ux,
   prototyping,
   javascript,
-  kotlin,
   html,
-  swift,
+  addinn,
   css,
   flutter,
-  vue,
   reactjs,
-
   tailwind,
   nodejs,
   git,
   figma,
-  docker,
-  postgresql,
-
-  graphql,
   komikult,
   leaderboard,
   math,
   movie,
   nyeusi,
-  space,
-  coverhunt,
-  dcc,
   kelhel,
   scaleup,
-  microverse,
+
 } from '../assets';
 
 export const navLinks = [
@@ -68,22 +58,10 @@ const services = [
 ];
 
 const technologies = [
-  
+
   {
     name: 'Flutter',
-    icon:   flutter,
-  },
-  {
-    name: 'Swift',
-    icon:   swift,
-  },
-  {
-    name: 'Kotlin',
-    icon:   kotlin,
-  },
-  {
-    name: 'Vue JS',
-    icon: vue,
+    icon: flutter,
   },
   {
     name: 'HTML 5',
@@ -110,34 +88,29 @@ const technologies = [
     icon: nodejs,
   },
   {
-    name: 'graphql',
-    icon: graphql,
-  },
-  {
-    name: 'postgresql',
-    icon: postgresql,
-  },
-  {
     name: 'git',
     icon: git,
   },
   {
     name: 'figma',
     icon: figma,
-  },
-  {
-    name: 'docker',
-    icon: docker,
-  },
+  }
 ];
 
 const experiences = [
   {
-    title: 'Mobile Developer intern',
-    company_name: 'Golden Cup',
-    icon: coverhunt,
+    title: 'UX/UI Designer',
+    company_name: 'ADDINN Group',
+    icon: addinn,
     iconBg: '#333333',
-    date: ' Sept 2023 - Nov 2023',
+    date: ' Jan 2023 - Now',
+  },
+  {
+    title: 'Mobile Developer and UX/UI Designer intern',
+    company_name: 'ADDINN Group',
+    icon: addinn,
+    iconBg: '#333333',
+    date: ' Mars 2024 - Sept 2024',
   },
   {
     title: 'Mobile Developer intern',
@@ -158,8 +131,8 @@ const experiences = [
 const projects = [
   {
     id: 'project-1',
-    name: 'KomiKult',
-    description: 'A comic characters list app that displays Marvel characters.',
+    name: 'Svelteo Clinic',
+    description: 'Svelteo Clinic is a modern online platform for booking aesthetic treatments and exploring personalized beauty care services',
     tags: [
       {
         name: 'react',
@@ -175,21 +148,21 @@ const projects = [
       },
     ],
     image: komikult,
-    repo: 'https://github.com/shaqdeff/KomiKult',
-    demo: 'https://shaqdeff.github.io/KomiKult/',
+
+    demo: 'https://svelteonice.com',
   },
   {
     id: 'project-2',
-    name: 'Leaderboard',
+    name: 'Edu VR',
     description:
-      'A leaderboard list app that displays scores submitted by different players.',
+      'EduVR is an interactive web platform that leverages virtual reality to deliver immersive educational experiences.',
     tags: [
       {
         name: 'react',
         color: 'blue-text-gradient',
       },
       {
-        name: 'restapi',
+        name: 'Three Js',
         color: 'green-text-gradient',
       },
       {
@@ -198,20 +171,19 @@ const projects = [
       },
     ],
     image: leaderboard,
-    repo: 'https://github.com/shaqdeff/Leaderboard',
-    demo: 'https://shaqdeff.github.io/Leaderboard/',
+    demo: 'https://eduvr-school.com',
   },
   {
     id: 'project-3',
-    name: 'Math Magicians',
-    description: 'This is a single-page calculator app built with React',
+    name: 'Filamen',
+    description: 'Filamen brand is a brand shop website showcasing and selling its signature products with a sleek, user-friendly interface',
     tags: [
       {
-        name: 'nextjs',
+        name: 'React',
         color: 'blue-text-gradient',
       },
       {
-        name: 'supabase',
+        name: 'NodeJS express',
         color: 'green-text-gradient',
       },
       {
@@ -220,54 +192,8 @@ const projects = [
       },
     ],
     image: math,
-    repo: 'https://github.com/shaqdeff/Math-Magicians',
-    demo: 'https://inspiring-medovik-37d3b3.netlify.app/',
-  },
-  {
-    id: 'project-4',
-    name: 'Movie Metro',
-    description: `A single-page application that allows users to search for any movie or show's ratings and its details.`,
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: movie,
-    repo: 'https://github.com/shaqdeff/Movie-Metro',
-    demo: 'https://movie-metro.netlify.app/',
-  },
-  {
-    id: 'project-5',
-    name: 'Nyeusi Fest Site',
-    description:
-      'This is a demo concert website for a music festival called Nyeusi.',
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: nyeusi,
-    repo: 'https://github.com/shaqdeff/Nyeusi-Fest-Site',
-    demo: 'https://shaqdeff.github.io/Nyeusi-Fest-Site/',
-  },
+    demo: 'https://www.filamen.com.tn',
+  }
 ];
 
 export { services, technologies, experiences, projects };

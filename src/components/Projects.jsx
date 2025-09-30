@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { SectionWrapper } from '../hoc';
 import { styles } from '../styles';
-import { github, pineapple, pineappleHover } from '../assets';
+import { pineapple, pineappleHover } from '../assets';
 import { projects } from '../constants';
 import { fadeIn, textVariant, staggerContainer } from '../utils/motion';
 
@@ -11,7 +11,6 @@ const ProjectCard = ({
   name,
   description,
   image,
-  repo,
   demo,
   index,
   active,
@@ -20,9 +19,8 @@ const ProjectCard = ({
   return (
     <motion.div
       variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
-      className={`relative ${
-        active === id ? 'lg:flex-[3.5] flex-[10]' : 'lg:flex-[0.5] flex-[2]'
-      } flex items-center justify-center min-w-[170px] 
+      className={`relative ${active === id ? 'lg:flex-[3.5] flex-[10]' : 'lg:flex-[0.5] flex-[2]'
+        } flex items-center justify-center min-w-[170px] 
       h-[420px] cursor-pointer card-shadow`}
       onClick={() => handleClick(id)}>
       <div
@@ -50,19 +48,7 @@ const ProjectCard = ({
           <div
             className="absolute bottom-0 p-8 justify-start w-full 
             flex-col bg-[rgba(122,122,122,0.5)] rounded-b-[24px] z-20">
-            <div className="absolute inset-0 flex justify-end m-3">
-              <div
-                onClick={() => window.open(repo, '_blank')}
-                className="bg-night sm:w-11 sm:h-11 w-10 h-10 rounded-full 
-                  flex justify-center items-center cursor-pointer
-                  sm:opacity-[0.9] opacity-[0.8]">
-                <img
-                  src={github}
-                  alt="source code"
-                  className="w-4/5 h-4/5 object-contain"
-                />
-              </div>
-            </div>
+
 
             <h2
               className="font-bold sm:text-[32px] text-[24px] 
@@ -125,8 +111,7 @@ const Projects = () => {
           variants={fadeIn('', '', 0.1, 1)}
           className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
           These projects demonstrate my expertise with practical examples of
-          some of my work, including brief descriptions and links to code
-          repositories and live demos. They showcase my ability to tackle
+          some of my work, including brief descriptions and links live demos. They showcase my ability to tackle
           intricate challenges, adapt to various technologies, and efficiently
           oversee projects.
         </motion.p>
